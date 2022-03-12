@@ -25,6 +25,14 @@ nav {
   z-index: 100;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .navbar-container {
   height: inherit;
   margin: 0;
@@ -41,8 +49,13 @@ nav {
 }
 
 .navbar-container a {
-  text-decoration: none;
+  text-decoration: underline white 8px;
   color: white;
+}
+
+.navbar-container a:hover {
+  opacity: 0.9;
+  color: cyan;
 }
 
 .name-title h1 {
@@ -67,13 +80,12 @@ nav {
   top: 70%;
   left: 76%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 35px;
   -webkit-text-stroke: 0.2px black;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .about-me-container {
-  margin-bottom: 40px;
+  margin: 40px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -87,18 +99,18 @@ nav {
   font-size: var(--font-big);
 }
 
-.about-me-container div {
+.about-me-content {
   padding: 0;
   display: flex;
   flex-flow: column;
-  flex: 0 2 60%;
+  flex: 0 2 50%;
   justify-content: flex-start;
   list-style: none;
   text-align: justify;
 }
 
 .work-container {
-  margin-bottom: 40px;
+  margin: 40px 0px;
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
@@ -113,28 +125,63 @@ nav {
 }
 
 .work-items {
-  /* width: 70px;
-  height: 70px; */
-  /* margin: 0;
-  padding: 0; */
   display: flex;
   flex-flow: row wrap;
-  flex: 0 2 60%;
+  flex: 0 1 50%;
   justify-content: space-between;
   align-items: center;
-  /* display: flex;
-  flex-flow: row;
-  flex: 0 1 40%; */
+  gap: 10px;
+}
+
+.main-app {
+  position: relative;
+  min-width: 100%;
+}
+
+.main-app-title {
+  position: absolute;
+  border: solid 4px white;
+  padding: 20px;
+  color: white;
+  top: 70%;
+  left: 10%;
+  transform: translate(-50%, -50%);
 }
 
 .work-items img {
-  /* width: 100%; */
-  height: 160px;
+  position: relative;
   object-fit: cover;
+  height: 250px;
+  min-width: 100%;
+  border: solid 5px var(--pink);
 }
 
+.secondary-app {
+  position: relative;
+}
+
+.app-title {
+  position: absolute;
+  border: solid 4px white;
+  padding: 10px;
+  color: white;
+  top: 70%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.work-items img:hover {
+  opacity: 0.5;
+}
+
+/* .main-app h3 {
+  position: absolute;
+  color: white;
+  v
+} */
+
 .contact-me-container {
-  margin-bottom: 40px;
+  margin: 40px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -153,9 +200,105 @@ nav {
   padding: 0;
   display: flex;
   flex-flow: row;
-  flex: 0 2 60%;
+  flex: 0 2 50%;
+  align-items: center;
   justify-content: space-between;
   list-style: none;
+}
+
+.contact-data-image {
+  width: 80px;
+  height: 80px;
+  padding: 10px 30px;
+  float: left;
+}
+
+.contact-data-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.contact-me-container li {
+  text-decoration: underline cyan 8px;
+}
+
+.vl {
+  border-left: 7px solid var(--pink);
+  height: 300px;
+}
+
+@media only screen and (max-width: 840px) {
+  :root {
+    --font-big: 30px;
+  }
+
+  .vl {
+    border-left: 5px solid var(--pink);
+    height: 200px;
+  }
+
+  .work-items img {
+    height: 100px;
+  }
+
+  .contact-me-container ul {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  :root {
+    --font-big: 15px;
+  }
+
+  .vl {
+    border-left: 2px solid var(--pink);
+    height: 150px;
+  }
+
+  .work-items img {
+    height: 50px;
+  }
+
+  .navbar-container {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .navbar-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+
+  .name-title h1 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+  }
+
+  .about-me-content p,
+  .contact-me-container ul {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .cover-image img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .cover-text {
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 /* .footer {

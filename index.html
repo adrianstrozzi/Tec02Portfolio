@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adrian Strozzi - Portfolio</title>
   <link rel="stylesheet" href="./assets/style.css">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/png" alt="page-tab-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -18,21 +19,23 @@
       <li class="name-title">
         <h1>Adrian Strozzi</h1>
       </li>
-      <li><a>About Me</a></li>
-      <li><a>Work</a></li>
-      <li><a>Contact Me</a></li>
-      <li><a>Resume</a></li>
+      <li><a href="#about-me" alt="link-to-about-me-section">ABOUT ME</a></li>
+      <li><a href="#work" alt="link-to-work-section">WORK</a></li>
+      <li><a href="#contact-me" alt="link-to-contact-me-section">CONTACT ME</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1Bn6seDHnWvR8WcpDSmAhRqrsm9EcFipe?usp=sharing"
+          alt="link-to-google-drive-link">RESUME</a></li>
     </ul>
   </nav>
   <div class="cover-image">
-    <img src="./assets/images/optionWP.jpg">
+    <img src="./assets/images/optionWP.jpg" alt="colorful-cover-image">
     <div class="cover-text">Welcome to my Portfolio!</div>
   </div>
-  <section class="about-me-container">
+  <section class="about-me-container" id="about-me">
     <h2>About Me</h2>
-    <div>
+    <div class="vl"></div>
+    <div class="about-me-content">
       <p>
-        This is Portfolio page I did to practice HTML/CSS concepts.
+        This is a Portfolio page I did to practice HTML/CSS concepts.
         I started my journey as a Web Developer in 2020 and felt highly inclined towards FrontEnd
         development.
         I've always been passionate about the UI/UX in Apps
@@ -46,31 +49,73 @@
         and I'm always interested in the latest news regarding software and hardware.</p>
     </div>
   </section>
-  <section class="work-container">
+  <section class="work-container" id="work">
     <h2>Work</h2>
+    <div class="vl"></div>
     <div class="work-items">
-      <div><img src="./assets/images/optionWP.jpg"></div>
-      <div><img src="./assets/images/optionWP.jpg"></div>
-      <div><img src="./assets/images/optionWP.jpg"></div>
-      <div><img src="./assets/images/optionWP.jpg"></div>
-      <div><img src="./assets/images/optionWP.jpg"></div>
-      <div><img src="./assets/images/optionWP.jpg"></div>
+      <div class="main-app">
+        <a href="#">
+          <img src="./assets/images/optionWP.jpg" alt="work-image">
+        </a>
+        <h3 class="main-app-title">
+          Work1
+        </h3>
+      </div>
+      <div class="secondary-app">
+        <a href="#">
+          <img src="./assets/images/optionWP.jpg" alt="work-image">
+        </a>
+        <h3 class="app-title">
+          Work1
+        </h3>
+      </div>
+      <div class="secondary-app">
+        <a href="#">
+          <img src="./assets/images/optionWP.jpg" alt="work-image">
+        </a>
+        <h3 class="app-title">
+          Work1
+        </h3>
+      </div>
+      <div class="secondary-app">
+        <a href="#">
+          <img src="./assets/images/optionWP.jpg" alt="work-image">
+        </a>
+        <h3 class="app-title">
+          Work1
+        </h3>
+      </div>
+      <div class="secondary-app">
+        <a href="#">
+          <img src="./assets/images/optionWP.jpg" alt="work-image">
+        </a>
+        <h3 class="app-title">
+          Work1
+        </h3>
+      </div>
     </div>
   </section>
 
 
 
-  <section class="contact-me-container">
-    <h2>Contact Me</h2>
+  <section class="contact-me-container" id="contact-me">
+    <h2> Contact Me</h2>
+    <div class="vl"></div>
     <ul>
-      <li>
-        Mobile: +52 3332323949
+      <li class="contact-data-image">
+        <img src="./assets/images/profile.jpg" alt="profile-image">
       </li>
       <li>
-        Made by <a href="https://github.com/adrianstrozzi">Adrian Strozzi </a>
+        +52 3332323949
       </li>
       <li>
         adrianstrozzi @gmail.com
+      </li>
+      <li>
+        <a href="https://github.com/adrianstrozzi" alt="github-link">GITHUB</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/adrianstrozzi/" alt="linkedin-link">LINKEDIN</a>
       </li>
     </ul>
   </section>
@@ -94,7 +139,7 @@
   </section> -->
   <!-- <footer class="footer">
     <p>
-      Made by <a href="https://github.com/adrianstrozzi">Adrian Strozzi </a>
+      <a href="https://github.com/adrianstrozzi">Adrian Strozzi </a>
     </p>
     <p>
       adrianstrozzi @gmail.com
