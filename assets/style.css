@@ -1,7 +1,11 @@
+/* Variable for main pink color */
+
 :root {
   --pink: #e700e7;
   --font-big: 50px;
 }
+
+/* Main body properties to delete general margin and padding */
 
 body {
   min-height: 100vh;
@@ -25,6 +29,8 @@ nav {
   z-index: 100;
 }
 
+/* Removed text decoration styles for normal and visited links */
+
 a:link {
   text-decoration: none;
 }
@@ -32,6 +38,8 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+
+/* Navbar container flex properties and styles for links */
 
 .navbar-container {
   height: inherit;
@@ -54,10 +62,28 @@ a:visited {
   color: cyan;
 }
 
+/* Profile image container and position properties */
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  float: left;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
 .name-title h1 {
   margin: 0;
   color: white;
 }
+
+/* Cover image height and width defined as well as object-fit property to properly only part of the image */
 
 .cover-image {
   position: relative;
@@ -79,6 +105,8 @@ a:visited {
   font-size: 35px;
   -webkit-text-stroke: 0.2px black;
 }
+
+/* About Me container flex properties and specific elements styling */
 
 .about-me-container {
   margin: 40px 0px;
@@ -104,6 +132,8 @@ a:visited {
   list-style: none;
   text-align: justify;
 }
+
+/* Work container flex properties and specific elements styling */
 
 .work-container {
   margin: 40px 0px;
@@ -170,6 +200,8 @@ a:visited {
   opacity: 0.5;
 }
 
+/* Contact me section flex properties and specific styles */
+
 .contact-me-container {
   margin: 40px 0px;
   display: flex;
@@ -196,28 +228,18 @@ a:visited {
   list-style: none;
 }
 
-.contact-data-image {
-  width: 50px;
-  height: 50px;
-  padding: 0px;
-  float: left;
-}
-
-.contact-data-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 30px;
-}
-
 .contact-me-container li {
   text-decoration: underline cyan 6px;
 }
+
+/* Style for vertical line at the side of section titles */
 
 .vl {
   border-left: 7px solid var(--pink);
   height: 300px;
 }
+
+/* Media queries for medium devices (tablets) */
 
 @media only screen and (max-width: 840px) {
   :root {
@@ -273,6 +295,8 @@ a:visited {
     font-size: 12px;
   }
 }
+
+/* Media queries for small devices (cellphones) */
 
 @media only screen and (max-width: 420px) {
   :root {
