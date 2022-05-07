@@ -82,25 +82,20 @@ a:visited {
 
 
 .cover-image {
-  position: relative;
-  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   min-width: 100%;
   background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-
 .cover-text {
-  position: absolute;
-  display: inline;
   color: white;
-  top: 70%;
-  left: 76%;
-  transform: translate(-50%, -50%);
   font-size: 35px;
-  -webkit-text-stroke: 0.2px black;
 }
 
 /* About Me container flex properties and specific elements styling */
@@ -128,6 +123,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
   justify-content: flex-start;
   list-style: none;
   text-align: justify;
+  font-size: 18px;
 }
 
 /* Work container flex properties and specific elements styling */
@@ -158,49 +154,46 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
 .main-app {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
-  min-width: 100%;
-  /* background-color: #9333ea; */
+  min-width: 80%;
+  border-radius: 20px;
 }
 
 .main-app-title {
-  position: absolute;
-  border: solid 4px white;
-  padding: 20px;
+  text-align: center;
   color: white;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: x-large;
 }
 
-.work-items img {
-  position: relative;
-  object-fit: fill;
-  height: 250px;
-  min-width: 100%;
-  border: solid 5px var(--pink);
-}
 
 .secondary-app {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
-  min-width: 80%;
-  background-color: #9333ea;
+  min-width: 60%;
+  border-radius: 20px;
+}
+
+.main-app:hover {
+  opacity: 0.8;
+}
+
+
+.secondary-app:hover {
+  opacity: 0.8;
 }
 
 .app-title {
-  position: absolute;
-  border: solid 4px white;
-  padding: 10px;
+  text-align: center;
   color: white;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: x-large;
 }
 
-.work-items img:hover {
-  opacity: 0.5;
-}
 
 /* Contact me section flex properties and specific styles */
 
@@ -299,10 +292,6 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-  .work-items img {
-    height: 100px;
-  }
-
   .contact-me-container ul {
     text-align: center;
     font-size: 10px;
@@ -338,9 +327,20 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
     height: 150px;
   }
 
-  .work-items img {
-    height: 50px;
+  .cover-image {
+    height: 100px;
   }
+
+  .main-app  {
+    min-width: 100%;
+    height: 100px;
+  }
+
+  .secondary-app {
+    min-width: 100%;
+    height: 100px;
+  }
+
 
   .navbar-container {
     flex-flow: row wrap;
