@@ -105,11 +105,6 @@ a:visited {
   border-radius: 30px;
 }
 
-.name-title h1 {
-  margin: 0;
-  color: white;
-}
-
 /* Cover image height and width defined as well as object-fit property to properly only part of the image */
 
 
@@ -137,12 +132,9 @@ a:visited {
 .cover-text-projects {
   color: black;
   font-size: 35px;
+  text-align: center;
 }
 
-.cover-text {
-  color: white;
-  font-size: 35px;
-}
 
 /* About Me container flex properties and specific elements styling */
 
@@ -329,14 +321,6 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
     text-decoration: underline white 4px;
   }
 
-  .cover-image {
-    position: relative;
-    height: 250px;
-    min-width: 100%;
-    background: #8E2DE2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
 
   .contact-me-container ul {
     text-align: center;
@@ -363,9 +347,14 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
 
 /* Media queries for small devices (cellphones) */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 425px) {
   :root {
     --font-big: 15px;
+  }
+
+  nav {
+    height: fit-content;
+    min-width: 100%;
   }
 
   .vl {
@@ -389,10 +378,11 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
 
 
   .navbar-container {
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column  nowrap;
+    justify-content: center;
     align-items: center;
     list-style: none;
+    min-height: 200px;
   }
 
   .navbar-container a {
@@ -437,10 +427,7 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
     text-align: center;
   }
 
-  .cover-text {
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
-    text-align: center;
+  .cover-text-projects {
+    font-size: 25px;
   }
 }
