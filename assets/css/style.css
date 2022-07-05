@@ -127,6 +127,9 @@ a:visited {
   align-items: center;
   height: 100px;
   min-width: 100%;
+  background: linear-gradient(to right, #0575e6, #00f260);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cover-text-projects {
