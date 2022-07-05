@@ -149,7 +149,6 @@ a:visited {
 .about-me-container h2 {
   flex: 0 1 20%;
   text-align: right;
-  color: var(--pink);
   font-size: var(--font-big);
 }
 
